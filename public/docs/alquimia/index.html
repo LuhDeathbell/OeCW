@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Alquimia#A ação de criar poções não é mera ciência ou ato arcano, mas uma arte em seu próprio direito.
+O efeito de uma poção pode ser calculado utilizando o cálculo abaixo:
+&gt; (efeitoBase*solvente)&#43;(alquimia*1.5*raridade)Lista de Ingredientes#Nome Descrição Essentia Raridade Preço (moedas) Pimenta do Dragão Uma pimenta intensamente picante, de cor vermelha vibrante. Ignis Comum 15 Alga-Sussurro Uma alga esverdeada que cresce em rios calmos, emitindo um leve som borbulhante. Aqua Comum 12 Pedra-Musgo Comum Pequena pedra coberta de musgo, encontrada em florestas úmidas. Terra Comum 10 Pena de Pardal Céu-Claro Uma pena simples de pardal, levíssima e comum em qualquer vilarejo. Aer Comum 8 Raiz da Melancolia Uma raiz com sabor amargo, frequentemente usada em tônicos para o sono. Perditio Comum 18 Folha de Lótus Comum Folha verde e larga de lótus, encontrada em lagos tranquilos. Ordo Comum 10 Coração de Fogueira Um pedaço de carvão que retém um calor residual por dias. Ignis Incomum 40 Escama de Truta Prateada Uma escama brilhante de truta, refletindo a luz da água. Aqua Incomum 35 Pepita de Minério Puro Uma pequena pepita de ferro ou cobre, com brilho metálico. Terra Incomum 50 Osso de Corvo Polido Um osso escuro e polido, frequentemente usado em amuletos de boa sorte. Aer Incomum 60 Cinzas de Rancor Cinzas de uma fogueira onde se queimou um objeto de valor sentimental perdido. Perditio Incomum 45 Pó de Prata Lunar Pó fino de prata pura, com um brilho suave que parece refletir a luz da lua. Ordo Incomum 55 Cérebro Seco Um cérebro de animal, preservado através de métodos alquímicos antigos. Ignis Raro 120 Âmbar de Salmão Gigante Resina fossilizada de um salmão ancestral, com uma cor alaranjada profunda. Aqua Raro 100 Jóia da Terra Ancestral Uma gema que emana um brilho terroso e uma sensação de estabilidade. Terra Raro 140 Incenso de Brisa Eterna Incenso feito de folhas raras, que cria uma fumaça leve e etérea, mesmo sem vento. Aer Raro 110 Semente Amaldiçoada Uma semente escura e seca, que causa um leve arrepio ao toque. Perditio Raro 90 Pó de Diamante Estelar Diamante pulverizado, com um brilho intenso e uma leve ressonância cósmica. Ordo Raro 130 Pólvora Arcana Uma pólvora de cor azulada que queima com um calor intenso e mágico. Ignis Muito Raro 280 Essência de Oceano Profundo Uma gota de água coletada das maiores profundezas oceânicas, densa e luminosa. Aqua Muito Raro 250 Coração de Raiz Milenar A raiz central de uma árvore ancestral, que pulsa com energia vital. Terra Muito Raro 300 Ectoplasma Estável Ectoplasma purificado de espíritos, com uma consistência gelatinosa e translúcida. Aer Muito Raro 270 Flor da Noite Eterna Uma solanácea de cor roxa escura que floresce apenas sob a lua nova, exalando um odor. Perditio Muito Raro 320 Ouro Primordial Um fragmento de ouro com um brilho que parece emanar do próprio tempo. Ordo Muito Raro 350 Chama Elemental Presa Uma pequena porção de fogo elemental, aprisionada em um cristal de proteção. Ignis Lendário 1200 Lágrima do Rio Celestial Uma gota de água pura, que se acredita ter escorrido de um rio nos céus. Aqua Lendário 1100 Núcleo de Cristal Geodésico O coração cristalino de uma geode gigante, com padrões de crescimento perfeitos. Terra Lendário 1300 Vento Congelado das Cimeiras Um frasco que contém uma lufada de vento capturada nos picos mais altos e gélidos. Aer Lendário 1000 Fragmento da Angústia Um pedaço de rocha escura que irradia tristeza e desesperança. Perditio Lendário 1500 Flor de Lótus Divina Uma flor de lótus de brilho dourado, que floresce apenas em solo abençoado. Ordo Lendário 1800 ">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/alquimia/">
+  <meta property="og:site_name" content="OeCW: A wiki oficial de Ordo et Caos">
+  <meta property="og:title" content="Alquimia">
+  <meta property="og:description" content="Alquimia#A ação de criar poções não é mera ciência ou ato arcano, mas uma arte em seu próprio direito.
+O efeito de uma poção pode ser calculado utilizando o cálculo abaixo:
+&gt; (efeitoBase*solvente)&#43;(alquimia*1.5*raridade)Lista de Ingredientes#Nome Descrição Essentia Raridade Preço (moedas) Pimenta do Dragão Uma pimenta intensamente picante, de cor vermelha vibrante. Ignis Comum 15 Alga-Sussurro Uma alga esverdeada que cresce em rios calmos, emitindo um leve som borbulhante. Aqua Comum 12 Pedra-Musgo Comum Pequena pedra coberta de musgo, encontrada em florestas úmidas. Terra Comum 10 Pena de Pardal Céu-Claro Uma pena simples de pardal, levíssima e comum em qualquer vilarejo. Aer Comum 8 Raiz da Melancolia Uma raiz com sabor amargo, frequentemente usada em tônicos para o sono. Perditio Comum 18 Folha de Lótus Comum Folha verde e larga de lótus, encontrada em lagos tranquilos. Ordo Comum 10 Coração de Fogueira Um pedaço de carvão que retém um calor residual por dias. Ignis Incomum 40 Escama de Truta Prateada Uma escama brilhante de truta, refletindo a luz da água. Aqua Incomum 35 Pepita de Minério Puro Uma pequena pepita de ferro ou cobre, com brilho metálico. Terra Incomum 50 Osso de Corvo Polido Um osso escuro e polido, frequentemente usado em amuletos de boa sorte. Aer Incomum 60 Cinzas de Rancor Cinzas de uma fogueira onde se queimou um objeto de valor sentimental perdido. Perditio Incomum 45 Pó de Prata Lunar Pó fino de prata pura, com um brilho suave que parece refletir a luz da lua. Ordo Incomum 55 Cérebro Seco Um cérebro de animal, preservado através de métodos alquímicos antigos. Ignis Raro 120 Âmbar de Salmão Gigante Resina fossilizada de um salmão ancestral, com uma cor alaranjada profunda. Aqua Raro 100 Jóia da Terra Ancestral Uma gema que emana um brilho terroso e uma sensação de estabilidade. Terra Raro 140 Incenso de Brisa Eterna Incenso feito de folhas raras, que cria uma fumaça leve e etérea, mesmo sem vento. Aer Raro 110 Semente Amaldiçoada Uma semente escura e seca, que causa um leve arrepio ao toque. Perditio Raro 90 Pó de Diamante Estelar Diamante pulverizado, com um brilho intenso e uma leve ressonância cósmica. Ordo Raro 130 Pólvora Arcana Uma pólvora de cor azulada que queima com um calor intenso e mágico. Ignis Muito Raro 280 Essência de Oceano Profundo Uma gota de água coletada das maiores profundezas oceânicas, densa e luminosa. Aqua Muito Raro 250 Coração de Raiz Milenar A raiz central de uma árvore ancestral, que pulsa com energia vital. Terra Muito Raro 300 Ectoplasma Estável Ectoplasma purificado de espíritos, com uma consistência gelatinosa e translúcida. Aer Muito Raro 270 Flor da Noite Eterna Uma solanácea de cor roxa escura que floresce apenas sob a lua nova, exalando um odor. Perditio Muito Raro 320 Ouro Primordial Um fragmento de ouro com um brilho que parece emanar do próprio tempo. Ordo Muito Raro 350 Chama Elemental Presa Uma pequena porção de fogo elemental, aprisionada em um cristal de proteção. Ignis Lendário 1200 Lágrima do Rio Celestial Uma gota de água pura, que se acredita ter escorrido de um rio nos céus. Aqua Lendário 1100 Núcleo de Cristal Geodésico O coração cristalino de uma geode gigante, com padrões de crescimento perfeitos. Terra Lendário 1300 Vento Congelado das Cimeiras Um frasco que contém uma lufada de vento capturada nos picos mais altos e gélidos. Aer Lendário 1000 Fragmento da Angústia Um pedaço de rocha escura que irradia tristeza e desesperança. Perditio Lendário 1500 Flor de Lótus Divina Uma flor de lótus de brilho dourado, que floresce apenas em solo abençoado. Ordo Lendário 1800">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta itemprop="name" content="Alquimia">
+  <meta itemprop="description" content="Alquimia#A ação de criar poções não é mera ciência ou ato arcano, mas uma arte em seu próprio direito.
+O efeito de uma poção pode ser calculado utilizando o cálculo abaixo:
+&gt; (efeitoBase*solvente)&#43;(alquimia*1.5*raridade)Lista de Ingredientes#Nome Descrição Essentia Raridade Preço (moedas) Pimenta do Dragão Uma pimenta intensamente picante, de cor vermelha vibrante. Ignis Comum 15 Alga-Sussurro Uma alga esverdeada que cresce em rios calmos, emitindo um leve som borbulhante. Aqua Comum 12 Pedra-Musgo Comum Pequena pedra coberta de musgo, encontrada em florestas úmidas. Terra Comum 10 Pena de Pardal Céu-Claro Uma pena simples de pardal, levíssima e comum em qualquer vilarejo. Aer Comum 8 Raiz da Melancolia Uma raiz com sabor amargo, frequentemente usada em tônicos para o sono. Perditio Comum 18 Folha de Lótus Comum Folha verde e larga de lótus, encontrada em lagos tranquilos. Ordo Comum 10 Coração de Fogueira Um pedaço de carvão que retém um calor residual por dias. Ignis Incomum 40 Escama de Truta Prateada Uma escama brilhante de truta, refletindo a luz da água. Aqua Incomum 35 Pepita de Minério Puro Uma pequena pepita de ferro ou cobre, com brilho metálico. Terra Incomum 50 Osso de Corvo Polido Um osso escuro e polido, frequentemente usado em amuletos de boa sorte. Aer Incomum 60 Cinzas de Rancor Cinzas de uma fogueira onde se queimou um objeto de valor sentimental perdido. Perditio Incomum 45 Pó de Prata Lunar Pó fino de prata pura, com um brilho suave que parece refletir a luz da lua. Ordo Incomum 55 Cérebro Seco Um cérebro de animal, preservado através de métodos alquímicos antigos. Ignis Raro 120 Âmbar de Salmão Gigante Resina fossilizada de um salmão ancestral, com uma cor alaranjada profunda. Aqua Raro 100 Jóia da Terra Ancestral Uma gema que emana um brilho terroso e uma sensação de estabilidade. Terra Raro 140 Incenso de Brisa Eterna Incenso feito de folhas raras, que cria uma fumaça leve e etérea, mesmo sem vento. Aer Raro 110 Semente Amaldiçoada Uma semente escura e seca, que causa um leve arrepio ao toque. Perditio Raro 90 Pó de Diamante Estelar Diamante pulverizado, com um brilho intenso e uma leve ressonância cósmica. Ordo Raro 130 Pólvora Arcana Uma pólvora de cor azulada que queima com um calor intenso e mágico. Ignis Muito Raro 280 Essência de Oceano Profundo Uma gota de água coletada das maiores profundezas oceânicas, densa e luminosa. Aqua Muito Raro 250 Coração de Raiz Milenar A raiz central de uma árvore ancestral, que pulsa com energia vital. Terra Muito Raro 300 Ectoplasma Estável Ectoplasma purificado de espíritos, com uma consistência gelatinosa e translúcida. Aer Muito Raro 270 Flor da Noite Eterna Uma solanácea de cor roxa escura que floresce apenas sob a lua nova, exalando um odor. Perditio Muito Raro 320 Ouro Primordial Um fragmento de ouro com um brilho que parece emanar do próprio tempo. Ordo Muito Raro 350 Chama Elemental Presa Uma pequena porção de fogo elemental, aprisionada em um cristal de proteção. Ignis Lendário 1200 Lágrima do Rio Celestial Uma gota de água pura, que se acredita ter escorrido de um rio nos céus. Aqua Lendário 1100 Núcleo de Cristal Geodésico O coração cristalino de uma geode gigante, com padrões de crescimento perfeitos. Terra Lendário 1300 Vento Congelado das Cimeiras Um frasco que contém uma lufada de vento capturada nos picos mais altos e gélidos. Aer Lendário 1000 Fragmento da Angústia Um pedaço de rocha escura que irradia tristeza e desesperança. Perditio Lendário 1500 Flor de Lótus Divina Uma flor de lótus de brilho dourado, que floresce apenas em solo abençoado. Ordo Lendário 1800">
+  <meta itemprop="wordCount" content="597">
+
+<title>Alquimia | OeCW: A wiki oficial de Ordo et Caos</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/alquimia/">
+<link rel="stylesheet" href="/book.min.6bbf7545fc399894a3a5862594bbed58d25c66b7cec22730254e3d6c6f3078af.css" integrity="sha256-a791Rfw5mJSjpYYllLvtWNJcZrfOwicwJU49bG8weK8=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.b055163749560aec2e768824d6fa8f0bb30923db5d3a4f2d791133954213af95.js" integrity="sha256-sFUWN0lWCuwudogk1vqPC7MJI9tdOk8teREzlUITr5U=" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/alquimia/index.xml" title="OeCW: A wiki oficial de Ordo et Caos" />
+
+  
+</head>
+<body dir="ltr" class="book-kind-section book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>OeCW: A wiki oficial de Ordo et Caos</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/clamare/" class="">
+      Clamare</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/clamare/deserto-de-vistaar/" class="">
+      Deserto de Vistaar</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a45c40c1dbda67b03f6ff9475888773b" class="toggle"  />
+    <label for="section-a45c40c1dbda67b03f6ff9475888773b" class="flex">
+      <a href="/docs/clamare/imp%C3%A9rio-contadino/" class="">
+        Império Contadino</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a571fbad7f477ce46224d051263992a2" class="toggle"  />
+    <label for="section-a571fbad7f477ce46224d051263992a2" class="flex">
+      <a href="/docs/clamare/imp%C3%A9rio-contadino/civori/" class="">
+        Civori, Capital Contadina</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/clamare/imp%C3%A9rio-contadino/civori/guilda-arcana-sal%C3%A3o-de-civori/" class="">
+      Guilda Arcana de Civori</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/clamare/imp%C3%A9rio-contadino/civori/palacio-de-miklat/" class="">
+      Palácio de Miklat</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/clamare/imp%C3%A9rio-contadino/civori/taverna-do-viajante-faminto/" class="">
+      Taverna do Viajante Faminto</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/alquimia/" class="active">
+      Alquimia</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Alquimia</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lista-de-ingredientes">Lista de Ingredientes</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="alquimia">Alquimia<a class="anchor" href="#alquimia">#</a></h1>
+<p>A ação de criar poções não é mera ciência ou ato arcano, mas uma arte em seu próprio direito.</p>
+<p>O efeito de uma poção pode ser calculado utilizando o cálculo abaixo:</p>
+<pre><code>&gt; (efeitoBase*solvente)+(alquimia*1.5*raridade)
+</code></pre>
+<h2 id="lista-de-ingredientes">Lista de Ingredientes<a class="anchor" href="#lista-de-ingredientes">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Nome</th>
+          <th style="text-align: left">Descrição</th>
+          <th style="text-align: left">Essentia</th>
+          <th style="text-align: left">Raridade</th>
+          <th style="text-align: left">Preço (moedas)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Pimenta do Dragão</strong></td>
+          <td style="text-align: left">Uma pimenta intensamente picante, de cor vermelha vibrante.</td>
+          <td style="text-align: left">Ignis</td>
+          <td style="text-align: left">Comum</td>
+          <td style="text-align: left">15</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Alga-Sussurro</strong></td>
+          <td style="text-align: left">Uma alga esverdeada que cresce em rios calmos, emitindo um leve som borbulhante.</td>
+          <td style="text-align: left">Aqua</td>
+          <td style="text-align: left">Comum</td>
+          <td style="text-align: left">12</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Pedra-Musgo Comum</strong></td>
+          <td style="text-align: left">Pequena pedra coberta de musgo, encontrada em florestas úmidas.</td>
+          <td style="text-align: left">Terra</td>
+          <td style="text-align: left">Comum</td>
+          <td style="text-align: left">10</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Pena de Pardal Céu-Claro</strong></td>
+          <td style="text-align: left">Uma pena simples de pardal, levíssima e comum em qualquer vilarejo.</td>
+          <td style="text-align: left">Aer</td>
+          <td style="text-align: left">Comum</td>
+          <td style="text-align: left">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Raiz da Melancolia</strong></td>
+          <td style="text-align: left">Uma raiz com sabor amargo, frequentemente usada em tônicos para o sono.</td>
+          <td style="text-align: left">Perditio</td>
+          <td style="text-align: left">Comum</td>
+          <td style="text-align: left">18</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Folha de Lótus Comum</strong></td>
+          <td style="text-align: left">Folha verde e larga de lótus, encontrada em lagos tranquilos.</td>
+          <td style="text-align: left">Ordo</td>
+          <td style="text-align: left">Comum</td>
+          <td style="text-align: left">10</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Coração de Fogueira</strong></td>
+          <td style="text-align: left">Um pedaço de carvão que retém um calor residual por dias.</td>
+          <td style="text-align: left">Ignis</td>
+          <td style="text-align: left">Incomum</td>
+          <td style="text-align: left">40</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Escama de Truta Prateada</strong></td>
+          <td style="text-align: left">Uma escama brilhante de truta, refletindo a luz da água.</td>
+          <td style="text-align: left">Aqua</td>
+          <td style="text-align: left">Incomum</td>
+          <td style="text-align: left">35</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Pepita de Minério Puro</strong></td>
+          <td style="text-align: left">Uma pequena pepita de ferro ou cobre, com brilho metálico.</td>
+          <td style="text-align: left">Terra</td>
+          <td style="text-align: left">Incomum</td>
+          <td style="text-align: left">50</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Osso de Corvo Polido</strong></td>
+          <td style="text-align: left">Um osso escuro e polido, frequentemente usado em amuletos de boa sorte.</td>
+          <td style="text-align: left">Aer</td>
+          <td style="text-align: left">Incomum</td>
+          <td style="text-align: left">60</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Cinzas de Rancor</strong></td>
+          <td style="text-align: left">Cinzas de uma fogueira onde se queimou um objeto de valor sentimental perdido.</td>
+          <td style="text-align: left">Perditio</td>
+          <td style="text-align: left">Incomum</td>
+          <td style="text-align: left">45</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Pó de Prata Lunar</strong></td>
+          <td style="text-align: left">Pó fino de prata pura, com um brilho suave que parece refletir a luz da lua.</td>
+          <td style="text-align: left">Ordo</td>
+          <td style="text-align: left">Incomum</td>
+          <td style="text-align: left">55</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Cérebro Seco</strong></td>
+          <td style="text-align: left">Um cérebro de animal, preservado através de métodos alquímicos antigos.</td>
+          <td style="text-align: left">Ignis</td>
+          <td style="text-align: left">Raro</td>
+          <td style="text-align: left">120</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Âmbar de Salmão Gigante</strong></td>
+          <td style="text-align: left">Resina fossilizada de um salmão ancestral, com uma cor alaranjada profunda.</td>
+          <td style="text-align: left">Aqua</td>
+          <td style="text-align: left">Raro</td>
+          <td style="text-align: left">100</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Jóia da Terra Ancestral</strong></td>
+          <td style="text-align: left">Uma gema que emana um brilho terroso e uma sensação de estabilidade.</td>
+          <td style="text-align: left">Terra</td>
+          <td style="text-align: left">Raro</td>
+          <td style="text-align: left">140</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Incenso de Brisa Eterna</strong></td>
+          <td style="text-align: left">Incenso feito de folhas raras, que cria uma fumaça leve e etérea, mesmo sem vento.</td>
+          <td style="text-align: left">Aer</td>
+          <td style="text-align: left">Raro</td>
+          <td style="text-align: left">110</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Semente Amaldiçoada</strong></td>
+          <td style="text-align: left">Uma semente escura e seca, que causa um leve arrepio ao toque.</td>
+          <td style="text-align: left">Perditio</td>
+          <td style="text-align: left">Raro</td>
+          <td style="text-align: left">90</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Pó de Diamante Estelar</strong></td>
+          <td style="text-align: left">Diamante pulverizado, com um brilho intenso e uma leve ressonância cósmica.</td>
+          <td style="text-align: left">Ordo</td>
+          <td style="text-align: left">Raro</td>
+          <td style="text-align: left">130</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Pólvora Arcana</strong></td>
+          <td style="text-align: left">Uma pólvora de cor azulada que queima com um calor intenso e mágico.</td>
+          <td style="text-align: left">Ignis</td>
+          <td style="text-align: left">Muito Raro</td>
+          <td style="text-align: left">280</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Essência de Oceano Profundo</strong></td>
+          <td style="text-align: left">Uma gota de água coletada das maiores profundezas oceânicas, densa e luminosa.</td>
+          <td style="text-align: left">Aqua</td>
+          <td style="text-align: left">Muito Raro</td>
+          <td style="text-align: left">250</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Coração de Raiz Milenar</strong></td>
+          <td style="text-align: left">A raiz central de uma árvore ancestral, que pulsa com energia vital.</td>
+          <td style="text-align: left">Terra</td>
+          <td style="text-align: left">Muito Raro</td>
+          <td style="text-align: left">300</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Ectoplasma Estável</strong></td>
+          <td style="text-align: left">Ectoplasma purificado de espíritos, com uma consistência gelatinosa e translúcida.</td>
+          <td style="text-align: left">Aer</td>
+          <td style="text-align: left">Muito Raro</td>
+          <td style="text-align: left">270</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Flor da Noite Eterna</strong></td>
+          <td style="text-align: left">Uma solanácea de cor roxa escura que floresce apenas sob a lua nova, exalando um odor.</td>
+          <td style="text-align: left">Perditio</td>
+          <td style="text-align: left">Muito Raro</td>
+          <td style="text-align: left">320</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Ouro Primordial</strong></td>
+          <td style="text-align: left">Um fragmento de ouro com um brilho que parece emanar do próprio tempo.</td>
+          <td style="text-align: left">Ordo</td>
+          <td style="text-align: left">Muito Raro</td>
+          <td style="text-align: left">350</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Chama Elemental Presa</strong></td>
+          <td style="text-align: left">Uma pequena porção de fogo elemental, aprisionada em um cristal de proteção.</td>
+          <td style="text-align: left">Ignis</td>
+          <td style="text-align: left">Lendário</td>
+          <td style="text-align: left">1200</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Lágrima do Rio Celestial</strong></td>
+          <td style="text-align: left">Uma gota de água pura, que se acredita ter escorrido de um rio nos céus.</td>
+          <td style="text-align: left">Aqua</td>
+          <td style="text-align: left">Lendário</td>
+          <td style="text-align: left">1100</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Núcleo de Cristal Geodésico</strong></td>
+          <td style="text-align: left">O coração cristalino de uma geode gigante, com padrões de crescimento perfeitos.</td>
+          <td style="text-align: left">Terra</td>
+          <td style="text-align: left">Lendário</td>
+          <td style="text-align: left">1300</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Vento Congelado das Cimeiras</strong></td>
+          <td style="text-align: left">Um frasco que contém uma lufada de vento capturada nos picos mais altos e gélidos.</td>
+          <td style="text-align: left">Aer</td>
+          <td style="text-align: left">Lendário</td>
+          <td style="text-align: left">1000</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Fragmento da Angústia</strong></td>
+          <td style="text-align: left">Um pedaço de rocha escura que irradia tristeza e desesperança.</td>
+          <td style="text-align: left">Perditio</td>
+          <td style="text-align: left">Lendário</td>
+          <td style="text-align: left">1500</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Flor de Lótus Divina</strong></td>
+          <td style="text-align: left">Uma flor de lótus de brilho dourado, que floresce apenas em solo abençoado.</td>
+          <td style="text-align: left">Ordo</td>
+          <td style="text-align: left">Lendário</td>
+          <td style="text-align: left">1800</td>
+      </tr>
+  </tbody>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/clamare/imp%C3%A9rio-contadino/civori/taverna-do-viajante-faminto/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>Taverna do Viajante Faminto</span>
+      </a>
+    
+    </span>
+    <span>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#lista-de-ingredientes">Lista de Ingredientes</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

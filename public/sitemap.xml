@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/docs/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/clamare/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/alquimia/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/clamare/imp%C3%A9rio-contadino/civori/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/clamare/deserto-de-vistaar/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/clamare/imp%C3%A9rio-contadino/civori/guilda-arcana-sal%C3%A3o-de-civori/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/clamare/imp%C3%A9rio-contadino/</loc>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/clamare/imp%C3%A9rio-contadino/civori/palacio-de-miklat/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/clamare/imp%C3%A9rio-contadino/civori/taverna-do-viajante-faminto/</loc>
+  </url>
+</urlset>

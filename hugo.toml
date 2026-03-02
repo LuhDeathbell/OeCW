@@ -1,3 +1,4 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Project'
+title = 'OeCW: A wiki oficial de Ordo et Caos'
+theme = "hugo-book"
